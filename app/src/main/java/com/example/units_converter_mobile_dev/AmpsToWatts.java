@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class AmpsToWatts extends AppCompatActivity {
 
-    Button back, convert;
+    Button convert;
     EditText amps;
     TextView watts;
 
@@ -21,7 +21,6 @@ public class AmpsToWatts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amps_to_watts);
 
-        back = findViewById(R.id.back);
         convert = findViewById(R.id.ampsToWatts);
         amps = findViewById(R.id.amps);
         watts = findViewById(R.id.watts);
@@ -35,14 +34,6 @@ public class AmpsToWatts extends AppCompatActivity {
                 final float answer = Samps*convertionvalue;
                 watts.setText(Float.toString(answer) + "  watts");}
 
-        });
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(AmpsToWatts.this,MainActivity.class);
-                startActivity(i);
-            }
         });
     }
 }

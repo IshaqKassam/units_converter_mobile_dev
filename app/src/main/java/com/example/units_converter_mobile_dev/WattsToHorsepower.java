@@ -17,7 +17,7 @@ public class WattsToHorsepower extends AppCompatActivity {
 
     EditText watts;
     TextView horsepower;
-    Button btnvolt, back;
+    Button btnvolt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,6 @@ public class WattsToHorsepower extends AppCompatActivity {
         horsepower = findViewById(R.id.horsepower);
         watts = findViewById(R.id.watts);
         btnvolt = findViewById(R.id.btn_volt);
-        back = findViewById(R.id.back_btn);
         btnvolt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,14 +42,6 @@ public class WattsToHorsepower extends AppCompatActivity {
                             .show(); }
                 else {horsepower.setText(Float.toString(result) + "  Horsepower");}
             }});
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(WattsToHorsepower.this,MainActivity.class);
-                startActivity(i);
-            }
-        });
 
     }
 }

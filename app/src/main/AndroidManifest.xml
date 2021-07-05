@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Units_converter_mobile_dev">
-        <activity android:name=".WattsToHorsepower"></activity>
-        <activity android:name=".AmpsToWatts" />
+        <activity android:name=".WattsToHorsepower"
+            android:parentActivityName=".MainActivity"
+            >
+        </activity>
+        <activity android:name=".AmpsToWatts"
+            android:parentActivityName=".MainActivity"
+            />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
