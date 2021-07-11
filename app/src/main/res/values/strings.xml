@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">units_converter_mobile_dev</string>
+    <string name="app_name">Units Converter</string>
+    <string name="from_watts_to_horsepower">Watts to Horsepower</string>
+    <string name="from_amps_to_watts">Amps to Watts</string>
+    <string name="convert_to_horsepower">Convert to Horsepower</string>
+    <string name="enter_amount_in_watts">enter amount in watts</string>
+    <string name="enter_amount_in_amps">enter amount in amps</string>
+    <string name="convert_to_watts">convert to watts</string>
+    <string name="convert_from">Convert From:</string>
 </resources>

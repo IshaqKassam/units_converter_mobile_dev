@@ -8,13 +8,8 @@
 
 
     <ScrollView
-        android:layout_width="395dp"
+        android:layout_width="0dp"
         android:layout_height="706dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +28,7 @@
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:textSize="36sp"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -45,20 +40,21 @@
                 android:layout_height="58dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
-                android:hint="enter amount in watts"
+                android:hint="@string/enter_amount_in_watts"
                 android:inputType="number|numberDecimal"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/horsepower" />
+                app:layout_constraintTop_toBottomOf="@+id/horsepower"
+                 />
 
             <Button
                 android:id="@+id/btn_volt"
-                android:layout_width="250dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
@@ -66,12 +62,13 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:radius="400dp"
-                android:text="convert to horsepower"
+                android:text="@string/convert_to_horsepower"
+                android:background="@drawable/rounded_button"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="parent"
-
+                android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@+id/watts" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
